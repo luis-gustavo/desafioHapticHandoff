@@ -23,6 +23,8 @@
 		6E44F49C1F699D6A00A7159C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44F49B1F699D6A00A7159C /* ExtensionDelegate.swift */; };
 		6E44F49E1F699D6A00A7159C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E44F49D1F699D6A00A7159C /* Assets.xcassets */; };
 		9707F5D61F69B5BE00ABB807 /* MyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F5D51F69B5BE00ABB807 /* MyCell.swift */; };
+		9707F5D81F69BBBF00ABB807 /* DetailHapticInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F5D71F69BBBF00ABB807 /* DetailHapticInterfaceController.swift */; };
+		9707F5DA1F69BD4500ABB807 /* HapticTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9707F5D91F69BD4500ABB807 /* HapticTypes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		6E44F49D1F699D6A00A7159C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E44F49F1F699D6A00A7159C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9707F5D51F69B5BE00ABB807 /* MyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyCell.swift; sourceTree = "<group>"; };
+		9707F5D71F69BBBF00ABB807 /* DetailHapticInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailHapticInterfaceController.swift; sourceTree = "<group>"; };
+		9707F5D91F69BD4500ABB807 /* HapticTypes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticTypes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,8 @@
 				6E44F49D1F699D6A00A7159C /* Assets.xcassets */,
 				6E44F49F1F699D6A00A7159C /* Info.plist */,
 				9707F5D51F69B5BE00ABB807 /* MyCell.swift */,
+				9707F5D71F69BBBF00ABB807 /* DetailHapticInterfaceController.swift */,
+				9707F5D91F69BD4500ABB807 /* HapticTypes.swift */,
 			);
 			path = "desafioHapticHandoff WatchKit Extension";
 			sourceTree = "<group>";
@@ -317,8 +323,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9707F5D61F69B5BE00ABB807 /* MyCell.swift in Sources */,
+				9707F5D81F69BBBF00ABB807 /* DetailHapticInterfaceController.swift in Sources */,
 				6E44F49C1F699D6A00A7159C /* ExtensionDelegate.swift in Sources */,
 				6E44F49A1F699D6A00A7159C /* InterfaceController.swift in Sources */,
+				9707F5DA1F69BD4500ABB807 /* HapticTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

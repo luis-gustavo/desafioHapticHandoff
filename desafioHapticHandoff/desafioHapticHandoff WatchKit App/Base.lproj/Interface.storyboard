@@ -16,7 +16,7 @@
                     <items>
                         <table alignment="left" id="03I-C4-tF3">
                             <items>
-                                <tableRow identifier="MyCell" selectable="NO" id="Rol-a3-1uO" customClass="MyCell" customModule="desafioHapticHandoff_WatchKit_Extension">
+                                <tableRow identifier="MyCell" id="Rol-a3-1uO" customClass="MyCell" customModule="desafioHapticHandoff_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="Qbv-Aw-ofH">
                                         <items>
                                             <label alignment="center" verticalAlignment="center" id="OQx-o4-Q2J"/>
@@ -29,8 +29,30 @@
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="tableHaptics" destination="03I-C4-tF3" id="bSD-Ak-8Q0"/>
+                    </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="419" y="-68"/>
+        </scene>
+        <!--DetailHaptic-->
+        <scene sceneID="OjR-IF-b35">
+            <objects>
+                <controller identifier="DetailHaptic" id="oH4-XC-ZUh" customClass="DetailHapticInterfaceController" customModule="desafioHapticHandoff_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="449" alignment="left" id="vxs-O5-txr">
+                            <items>
+                                <label alignment="left" numberOfLines="25" id="a3g-o3-kJF"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="labelDetailHaptic" destination="a3g-o3-kJF" id="Za7-5B-8LV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="759" y="-117"/>
         </scene>
     </scenes>
 </document>
