@@ -8,18 +8,57 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+enum HapticType {
+    case Start
+    case Stop
+    case Click
+    case Notification
+    case DirectionUp
+    case DirectionDown
+    case Success
+    case Failure
+    case Retry
+}
 
+class ViewController: UIViewController {
+    
+    ///Mark: - Outlets
+    @IBOutlet weak var hapticTableView: UITableView!
+
+    ///Mark: - Initializations
+    let cellIdentifier = "cell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        setupTableView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
-
+    /**
+     Table View Initial Setup
+     */
+    func setupTableView(){
+        self.hapticTableView.delegate = self
+        self.hapticTableView.dataSource = self
+    }
+    
+    ///Mark: - Actions
 }
 
+///Mark: - Table View Data Source and Delegate
+
+extension ViewController: UITableViewDelegate, UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 9
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        
+        return cell
+    }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1E87E51F69AB9200C8C148 /* HapticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1E87E41F69AB9200C8C148 /* HapticTableViewCell.swift */; };
 		6E44F4771F699D6A00A7159C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44F4761F699D6A00A7159C /* AppDelegate.swift */; };
 		6E44F4791F699D6A00A7159C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E44F4781F699D6A00A7159C /* ViewController.swift */; };
 		6E44F47C1F699D6A00A7159C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E44F47A1F699D6A00A7159C /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E1E87E41F69AB9200C8C148 /* HapticTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticTableViewCell.swift; sourceTree = "<group>"; };
 		6E44F4731F699D6A00A7159C /* desafioHapticHandoff.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = desafioHapticHandoff.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E44F4761F699D6A00A7159C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E44F4781F699D6A00A7159C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				6E44F47D1F699D6A00A7159C /* Assets.xcassets */,
 				6E44F47F1F699D6A00A7159C /* LaunchScreen.storyboard */,
 				6E44F4821F699D6A00A7159C /* Info.plist */,
+				6E1E87E41F69AB9200C8C148 /* HapticTableViewCell.swift */,
 			);
 			path = desafioHapticHandoff;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E1E87E51F69AB9200C8C148 /* HapticTableViewCell.swift in Sources */,
 				6E44F4791F699D6A00A7159C /* ViewController.swift in Sources */,
 				6E44F4771F699D6A00A7159C /* AppDelegate.swift in Sources */,
 			);
@@ -557,6 +561,7 @@
 				6E44F4A41F699D6A00A7159C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E44F4A61F699D6A00A7159C /* Build configuration list for PBXNativeTarget "desafioHapticHandoff WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -565,6 +570,7 @@
 				6E44F4A81F699D6A00A7159C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E44F4AA1F699D6A00A7159C /* Build configuration list for PBXNativeTarget "desafioHapticHandoff" */ = {
 			isa = XCConfigurationList;
@@ -573,6 +579,7 @@
 				6E44F4AC1F699D6A00A7159C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
