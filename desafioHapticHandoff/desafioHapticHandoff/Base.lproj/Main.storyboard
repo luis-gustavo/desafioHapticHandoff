@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X5X-iw-1Er">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Haptics-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="desafioHapticHandoff" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,116 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cmD-o5-jej">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="IY0-qI-M98" customClass="HapticTableViewCell" customModule="desafioHapticHandoff" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IY0-qI-M98" id="egk-vR-7fv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ivo-au-fKo">
+                                                    <rect key="frame" x="0.0" y="7" width="375" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="80e-XZ-yp3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ivo-au-fKo" firstAttribute="leading" secondItem="egk-vR-7fv" secondAttribute="leading" id="K1N-lS-af9"/>
+                                                <constraint firstItem="ivo-au-fKo" firstAttribute="centerY" secondItem="egk-vR-7fv" secondAttribute="centerY" id="P86-cH-9RO"/>
+                                                <constraint firstAttribute="trailing" secondItem="ivo-au-fKo" secondAttribute="trailing" id="rFM-Yi-hvt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="hapticName" destination="ivo-au-fKo" id="G6t-gx-1cp"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="jUH-HX-dLn"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Nv0-Sf-Vpb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cmD-o5-jej" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GB5-hm-iP9"/>
+                            <constraint firstItem="cmD-o5-jej" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IaT-KF-3XC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cmD-o5-jej" secondAttribute="bottom" id="Kke-JR-wf5"/>
+                            <constraint firstAttribute="trailing" secondItem="cmD-o5-jej" secondAttribute="trailing" id="fft-NL-yTb"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Haptics" id="U20-Jt-gAI"/>
+                    <connections>
+                        <outlet property="hapticTableView" destination="cmD-o5-jej" id="cAV-h3-INR"/>
+                        <segue destination="IyJ-gk-HvH" kind="show" identifier="goToSingleHaptic" id="RHZ-B8-Mvc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--Single Haptic View Controller-->
+        <scene sceneID="y5y-8A-aR1">
+            <objects>
+                <viewController id="IyJ-gk-HvH" customClass="SingleHapticViewController" customModule="desafioHapticHandoff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ioY-yO-hHT"/>
+                        <viewControllerLayoutGuide type="bottom" id="ULk-CO-IX4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TgY-ev-ST4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F1X-Y1-MJN">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="F1X-Y1-MJN" firstAttribute="top" secondItem="ioY-yO-hHT" secondAttribute="bottom" id="C1D-hw-eF9"/>
+                            <constraint firstItem="ULk-CO-IX4" firstAttribute="top" secondItem="F1X-Y1-MJN" secondAttribute="bottom" id="WVF-0y-ukO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F1X-Y1-MJN" secondAttribute="trailing" id="yIO-mc-Csb"/>
+                            <constraint firstItem="F1X-Y1-MJN" firstAttribute="leading" secondItem="TgY-ev-ST4" secondAttribute="leadingMargin" id="z4g-cO-Wcm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hapticDescriptionTextView" destination="F1X-Y1-MJN" id="9yQ-bx-OhS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oWG-W3-0iQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2126" y="132"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ayp-Id-xrz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X5X-iw-1Er" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ktJ-Ui-Eil">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6YT-io-g9F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M4g-qB-6ef" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="137"/>
         </scene>
     </scenes>
 </document>
