@@ -38,7 +38,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="80e-XZ-yp3"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -63,15 +63,15 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cmD-o5-jej" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GB5-hm-iP9"/>
+                            <constraint firstItem="cmD-o5-jej" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IaT-KF-3XC"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cmD-o5-jej" secondAttribute="bottom" id="Kke-JR-wf5"/>
                             <constraint firstAttribute="trailing" secondItem="cmD-o5-jej" secondAttribute="trailing" id="fft-NL-yTb"/>
-                            <constraint firstItem="cmD-o5-jej" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="pWq-IN-WUc"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Haptics" id="U20-Jt-gAI"/>
                     <connections>
                         <outlet property="hapticTableView" destination="cmD-o5-jej" id="cAV-h3-INR"/>
-                        <segue destination="IyJ-gk-HvH" kind="show" id="RHZ-B8-Mvc"/>
+                        <segue destination="IyJ-gk-HvH" kind="show" identifier="goToSingleHaptic" id="RHZ-B8-Mvc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -94,7 +94,7 @@
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>

@@ -27,6 +27,7 @@ class ViewController: UIViewController {
 
     ///Mark: - Initializations
     let cellIdentifier = "cell"
+    var passedIndex: Int = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +64,13 @@ class ViewController: UIViewController {
         SingletonHaptic.sharedIntance.allHaptics.append(Haptic(name: .Click, description: "Indicates a simple click type of feedback. Use this haptic to mark fixed points along a path. Space out the intervals at which you play the haptic rather than playing it several times in quick succession."))
     }
     
-    ///Mark: - Actions
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToSingleHaptic"{
+            if let nextScreen = segue.destination as? SingleHapticViewController{
+                nextScreen.passedIndex = passedIndex
+            }
+        }
+    }
 }
 
 ///Mark: - Table View Data Source and Delegate
@@ -80,6 +87,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        passedIndex = indexPath.row
+        performSegue(withIdentifier: "goToSingleHaptic", sender: Any?.self)
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }

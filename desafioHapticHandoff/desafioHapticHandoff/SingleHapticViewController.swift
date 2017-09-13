@@ -14,7 +14,12 @@ class SingleHapticViewController: UIViewController{
     ///Mark: - Outlets
     @IBOutlet weak var hapticDescriptionTextView: UITextView!
     
+    ///Mark: - Initializations
+    var passedIndex: Int = -1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        hapticDescriptionTextView.text = SingletonHaptic.sharedIntance.allHaptics[passedIndex].description
+        self.title = String(describing: SingletonHaptic.sharedIntance.allHaptics[passedIndex].name)
     }
 }
