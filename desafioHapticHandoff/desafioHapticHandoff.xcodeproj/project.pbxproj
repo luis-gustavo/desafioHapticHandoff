@@ -244,18 +244,18 @@
 				TargetAttributes = {
 					6E44F4721F699D6A00A7159C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = A93689JNSR;
+						DevelopmentTeam = 69ZRDLLV3P;
 						ProvisioningStyle = Automatic;
 					};
 					6E44F4841F699D6A00A7159C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = A93689JNSR;
+						DevelopmentTeam = 69ZRDLLV3P;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					6E44F4931F699D6A00A7159C = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = A93689JNSR;
+						DevelopmentTeam = 69ZRDLLV3P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -477,7 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = A93689JNSR;
+				DEVELOPMENT_TEAM = 69ZRDLLV3P;
 				INFOPLIST_FILE = "desafioHapticHandoff WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.desafioHapticHandoff.watchkitapp.watchkitextension;
@@ -494,7 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = A93689JNSR;
+				DEVELOPMENT_TEAM = 69ZRDLLV3P;
 				INFOPLIST_FILE = "desafioHapticHandoff WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.desafioHapticHandoff.watchkitapp.watchkitextension;
@@ -513,7 +513,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = A93689JNSR;
+				DEVELOPMENT_TEAM = 69ZRDLLV3P;
 				IBSC_MODULE = desafioHapticHandoff_WatchKit_Extension;
 				INFOPLIST_FILE = "desafioHapticHandoff WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -534,7 +534,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = A93689JNSR;
+				DEVELOPMENT_TEAM = 69ZRDLLV3P;
 				IBSC_MODULE = desafioHapticHandoff_WatchKit_Extension;
 				INFOPLIST_FILE = "desafioHapticHandoff WatchKit App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -552,7 +552,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A93689JNSR;
+				DEVELOPMENT_TEAM = 69ZRDLLV3P;
 				INFOPLIST_FILE = desafioHapticHandoff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.desafioHapticHandoff;
@@ -565,7 +565,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = A93689JNSR;
+				DEVELOPMENT_TEAM = 69ZRDLLV3P;
 				INFOPLIST_FILE = desafioHapticHandoff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.bepiducb.desafioHapticHandoff;

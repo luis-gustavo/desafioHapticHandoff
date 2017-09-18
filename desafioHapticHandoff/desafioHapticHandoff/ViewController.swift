@@ -31,11 +31,17 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let activity = NSUserActivity(activityType: HandoffHelper.ActivityType.opcaoSelecionada.rawValue)
         
+        // no lugar de "success" vamos substituir pela row name recebida, vinda do watch.
+        
+        activity.userInfo = [HandoffHelper.ActivityType.opcaoSelecionada.rawValue : "success"]
+        self.restoreUserActivityState(activity)
         setupTableView()
         populateHapticArray()
+        
     }
-
+   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

@@ -33,8 +33,11 @@ class InterfaceController: WKInterfaceController {
 
     override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         self.pushController(withName: "DetailHaptic", context: HapticType.allValues[rowIndex].getDetail())
+        createActivty(index: rowIndex)
     }
     
-
+    func createActivty(index: Int){
+        self.updateUserActivity(HandoffHelper.ActivityType.opcaoSelecionada.rawValue, userInfo: [HandoffHelper.ActivityType.opcaoSelecionada.rawValue : HapticType.allValues[index].getDetail() ], webpageURL: nil)
+    }
 }
 
